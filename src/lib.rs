@@ -1,4 +1,4 @@
-pub use regex_static_macro::{lazy_regex, regex};
+pub use regex_static_macro::{lazy_regex, regex, static_regex};
 
 #[doc(hidden)]
 pub use once_cell;
@@ -14,5 +14,6 @@ mod tests {
     fn it_works() {
         let _regex = regex_static::regex!("^YESSSS (.*)$");
         let _regex = regex_static::lazy_regex!("^YESSSS (.*)$");
+        let _regex = regex_static::static_regex!("^YESSSS (.*)$");
     }
 }
