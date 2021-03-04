@@ -1,10 +1,11 @@
 [package]
 name = "regex_static_impl"
+description = "Compile-time validated regex, with convenience functions for lazy and static regexes."
 version = "0.1.0"
 authors = ["Brendan Molloy <brendan@bbqsrc.net>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "Apache-2.0 OR MIT OR CC0-1.0"
+repository = "https://github.com/bbqrc/regex-static"
 
 [dependencies]
 syn = { version = "1", features = ["full", "extra-traits"] }

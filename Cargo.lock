@@ -80,9 +80,7 @@ dependencies = [
 name = "regex_static_macro"
 version = "0.1.0"
 dependencies = [
- "once_cell",
  "proc-macro2",
- "regex",
  "regex_static_impl",
  "syn",
 ]

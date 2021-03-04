@@ -8,7 +8,7 @@ license = "Apache-2.0 OR MIT OR CC0-1.0"
 repository = "https://github.com/bbqrc/regex-static"
 
 [dependencies]
-regex_static_macro = { path = "./macro" }
+regex_static_macro = { version = "0.1", path = "./macro" }
 regex = "1"
 once_cell = "1"
 
