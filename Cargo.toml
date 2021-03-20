@@ -1,11 +1,11 @@
 [package]
 name = "regex_static"
 description = "Compile-time validated regex, with convenience functions for lazy and static regexes."
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Brendan Molloy <brendan@bbqsrc.net>"]
 edition = "2018"
 license = "Apache-2.0 OR MIT OR CC0-1.0"
-repository = "https://github.com/bbqrc/regex-static"
+repository = "https://github.com/bbqsrc/regex-static"
 
 [dependencies]
 regex_static_macro = { version = "0.1", path = "./macro" }
