@@ -11,4 +11,4 @@ repository = "https://github.com/bbqrc/regex-static"
 syn = { version = "1", features = ["full", "extra-traits"] }
 quote = "1"
 proc-macro2 = "1"
-regex-syntax = "0.6.22"
+regex-syntax = "0.8"
