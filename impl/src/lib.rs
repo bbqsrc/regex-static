@@ -20,8 +20,8 @@ pub fn static_regex(item: LitStr) -> Result<TokenStream, syn::Error> {
         .map_err(|e| syn::Error::new(item.span(), e.to_string()))?;
     Ok(quote! {
         {
-            static regex: regex_static::once_cell::sync::OnceCell::<regex_static::Regex> = regex_static::once_cell::sync::OnceCell::new();
-            regex.get_or_init(|| regex_static::Regex::new(#item).unwrap())
+            static REGEX: regex_static::once_cell::sync::OnceCell::<regex_static::Regex> = regex_static::once_cell::sync::OnceCell::new();
+            REGEX.get_or_init(|| regex_static::Regex::new(#item).unwrap())
         }
     })
 }
