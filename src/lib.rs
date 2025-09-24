@@ -7,6 +7,9 @@
 //! Uses `once_cell` to lazily create the regex.
 //! 
 //! ```rust
+//! # use once_cell::sync::Lazy;
+//! # use regex::Regex;
+//!
 //! static RE: Lazy<Regex> = regex_static::lazy_regex!("^yesss$");
 //! ```
 //! 
