@@ -52,4 +52,12 @@ mod tests {
         let _regex = regex_static::lazy_regex!("^YESSSS (.*)$");
         let _regex = regex_static::static_regex!("^YESSSS (.*)$");
     }
+
+    #[test]
+    fn named_capture_group() {
+        // https://github.com/bbqsrc/regex-static/issues/4
+
+        static _RE: Lazy<regex::Regex> = regex_static::lazy_regex!("^(?<hello>hello)$");
+        let regex = regex::Regex::new("^(?<hello>hello)$").unwrap();
+    }
 }
